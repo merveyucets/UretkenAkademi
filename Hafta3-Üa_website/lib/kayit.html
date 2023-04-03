@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Üretken Akademi giriş yap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  </head>
+
+
+
+  <body>
+    <div class="body">
+    <img src="https://platform.uretkenakademi.com/wp-content/uploads/2022/05/cropped-uretken-akademi-favicon-1.png"></img>
+    <div class="giris">
+      <h4>Kayıt Ol</h4>
+        <a><h6>Zaten hesabın var mı?</h6></a>
+        <a href="giris.html"><h5>Giriş Yap</h5></a>
+    </div>
+    <br>
+    <div class="information">
+      <div class="information2">
+      İsim*<input type="text"/><br>
+      Soyisim*<input type="text"/><br>
+      Kullanıcı Adı*<input type="text"/><br>
+      Eposta*<input type="text"/><br>
+      Şifre*<input type="password"/><br>
+      Şifre Tekrar*<input type="password"/><br>
+      <div class="check">
+      <input type="checkbox" id="kontrol">
+      <label for="kontrol"> Kullanım Koşulları ve Üyelik Sözleşmesi</label>
+      <input type="checkbox" id="kontrol">
+       <label for="kontrol">Aydınlatma Metni</label>
+      
+        <div>
+          Kayıt olarak <span><a href="#"> Kullanım Koşulları ve Üyelik Sözleşmesi</a></span> ve <span><a href="#">Aydınlatma Metnini</a></span> kabul etmiş sayılırsınız.</div>
+       </div>
+      </div>
+      <a href="giris.html"><button class="button">Gönder</button></a>
+    </div>
+   <br><br>
+
+    </div>
+  </body>
+</html>
+
+
+
+
+<style>
+  .body{
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+img{
+  width: 150px;
+}
+.giris{
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h4{
+  padding-right: 140px;
+}
+.giris h6, h5{
+  color: black;
+}
+input{
+  width:100%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+.information{
+  text-align: left;
+  border:1px solid gray;
+  margin:10px;
+  padding: 10px;
+}
+.information2{
+  padding:10px;
+}
+.button{
+  width: 35%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  background-color: #22c55e;
+  color:white;
+  
+}
+.button:hover{
+  background-color: #1ca34e;
+}
+h6{
+  color: black;
+  text-align: center;
+}
+h6:hover{
+  color: #22c55e;
+}
+.check{
+  position:relative;
+  width:400px;
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+#kontrol{
+  padding:0;
+  margin:0;
+  position:relative;
+  right:200px;
+}
+
+</style>

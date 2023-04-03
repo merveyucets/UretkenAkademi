@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>RESİM GALERİSİ</h1>
+      <div class="table-responsive">
+        <table class="table-borderless">
+          <tr>
+            <td class="resim"></td>
+            <td class="resim"></td>
+            <td class="resim"></td>
+          </tr>
+          <tr>
+            <td class="resim"></td>
+            <td class="resim"></td>
+            <td class="resim"></td>
+          </tr>
+          <tr>
+            <td class="resim"></td>
+            <td class="resim"></td>
+            <td class="resim"></td>
+          </tr>
+          <tr>
+            <td class="resim"></td>
+            <td class="resim"></td>
+            <td class="resim"></td>
+          </tr>
+          <tr>
+            <td class="resim"></td>
+            <td class="resim"></td>
+            <td class="resim"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <style>
+      h1 {
+        text-align: center;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+      }
+
+      .container {
+        margin-top: 20px;
+      }
+
+      .table-borderless {
+        margin: 0px auto;
+      }
+    </style>
+
+    <script>
+      const url = 'https://source.unsplash.com/random/';
+
+      var randomImage = new Array();
+      for (let i = 0; i < 15; i++) {
+        randomImage[i] = url + randomSize();
+      }
+
+      var resimler = document.getElementsByClassName("resim");
+
+      for (let a = 0; a < 15; a++) {
+        resimler[a].innerHTML =
+          resimler[a].innerHTML + '<img src=' + randomImage[a] + ' />';
+        console.log(resimler[a]);
+      }
+
+      function randomNumber() {
+        return Math.floor(Math.random() * 10) + 300;
+      }
+
+      function randomSize() {
+        return `${randomNumber()}×${randomNumber()}`;
+      }
+    </script>
+  </body>
+</html>

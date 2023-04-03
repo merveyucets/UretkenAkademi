@@ -1,0 +1,31 @@
+.card-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #117683;
+    border-radius:7px;
+    
+    
+  }
+
+  .card {
+    margin: 10px;
+    flex: 1 0 200px;
+   
+  }
+
+.body{
+    background-color: #b9e3e9e5;
+}
+
+.navbar{
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin : 20px;
+    background-color: #117683;
+    height: 70px;
+}

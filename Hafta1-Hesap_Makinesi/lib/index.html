@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+  <style>
+    .button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 30px 40px;
+    text-align: center; 
+    }
+
+.button1 {font-size: 20px; padding: 10px 17px;}
+.button2 {font-size: 20px; padding: 10px 23px;}
+.button3 {font-size: 20px; padding: 10px 20px;}
+.button4 {font-size: 20px; padding: 10px 25px;}
+  </style>
+  </head>
+
+<body>
+  <canvas id="myCanvas" width="240" height="50" style="border:3px solid #d3d3d3;">
+      Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "25px Arial";
+ctx.fillText("Hesap Makinesi",28,30);
+</script>
+
+
+
+<div class="box">
+  <div class="display"><input type="text" readonly size="22" id="d">
+
+    <input type="button"  class="button1"
+
+    value="C" onclick='c("")'>
+
+    
+  <div class="keys">
+    <p><input type="button" class="button2" 
+    value="1" onclick='v("1")'>
+
+    <input type="button" class="button2" 
+    value="2" onclick='v("2")'>
+
+    <input type="button" class="button2" 
+    value="3" onclick='v("3")'>
+  
+    <input type="button"  class="button3"
+    value="/" onclick='v("/")'></p>
+  
+    <p><input type="button" class="button2" 
+    value="4" onclick='v("4")'>
+
+    <input type="button" class="button2" 
+    value="5" onclick='v("5")'>
+  
+    <input type="button" class="button2" 
+    value="6" onclick='v("6")'>
+  
+    <input type="button"  class="button3"
+    value="-" onclick='v("-")'></p>
+
+    <p><input type="button" class="button2" 
+    value="7" onclick='v("7")'>
+  
+    <input type="button" class="button2" 
+    value="8" onclick='v("8")'>
+
+    <input type="button" class="button2" 
+    value="9" onclick='v("9")'>
+
+    <input type="button"  class="button3"
+    value="+" onclick='v("+")'></p>
+
+    <p><input type="button" class="button4" 
+    value="." onclick='v(".")'>
+  
+    <input type="button" class="button2" 
+    value="0" onclick='v("0")'>
+  
+    <input type="button" class="button4" 
+    value="=" onclick='e()'>
+
+    <input type="button" class="button2" 
+    value="*" onclick='v("*")'></p>
+
+  </div>
+  </div>
+</body>
+</html>
